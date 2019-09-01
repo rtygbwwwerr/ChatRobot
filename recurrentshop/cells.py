@@ -1,9 +1,10 @@
 from keras.models import Model
-from keras import initializers
+from keras import initializers, activations
 from keras import constraints
 from keras import regularizers
 from keras.layers import *
 from .engine import RNNCell
+from keras import backend as K
 
 
 def _slice(x, dim, index):
